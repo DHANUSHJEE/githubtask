@@ -2,8 +2,8 @@ let count = 1;
 function validate() {
     let table = document.getElementById('datastored')
     let row = table.insertRow(count)
-    const firstname = document.getElementById("firstname").value
-    const lastname = document.querySelector("#lastname").value
+    const fname = document.getElementById("fname").value
+    const lname = document.querySelector("#lname").value
     const address = document.querySelector("#address").value
     const pincode = document.querySelector("#pincode").value
     const genderselect = document.querySelector("#gender-select").value
@@ -34,11 +34,11 @@ function validate() {
     const state = document.querySelector("#state").value
     const country = document.querySelector("#country").value
 
-    if (firstname && lastname && address && food && foodcount >= 2 && pincode && state && country && genderselect) {
+    if (fname && lname && address && food && foodcount >= 2 && pincode && state && country && genderselect) {
         let cell1 = row.insertCell(0)
-        cell1.innerHTML = firstname
+        cell1.innerHTML = fname
         let cell2 = row.insertCell(1)
-        cell2.innerHTML = lastname
+        cell2.innerHTML = lname
         let cell3 = row.insertCell(2)
         cell3.innerHTML = address
         let cell4 = row.insertCell(3)
