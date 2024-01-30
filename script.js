@@ -53,10 +53,10 @@ function validate() {
         cell8.innerHTML = country
     }
     else if (foodcount < 2) {
-        alert("atleat 2 item "); return false;
+        alert("Select any 2 item "); return false;
     }
     else {
-        alert(" fill all the details"); return false;
+        alert(" Fill all the details"); return false;
     }
 
     var form = document.getElementById("forms")
